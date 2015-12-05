@@ -4,6 +4,11 @@ int main()
   int n, i, flag=0;
   printf("\nEnter a positive integer: ");
   scanf("%d",&n);
+  if(n<0)
+  {
+	   printf("\nEnter a positive integer only ");
+	   return;
+  }
   for(i=2;i<=n/2;++i)
   {
       if(n%i==0)
